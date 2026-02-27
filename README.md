@@ -14,6 +14,7 @@ ________________________________________________________________________________
 County centroid coordinates are incorporated to encode geographic structure. Pairwise distances are computed using the Haversine formulation, allowing identification of spatial neighbors and regional proximity relationships.
 A continuous weekly panel is constructed for each county. Missing observations are imputed via forward–backward propagation, followed by smoothing to reduce high-frequency volatility.
 Temporal dependence is modeled through lagged features derived from historical price dynamics:
+
 x_t,; x_{t-1},; x_{t-2},; x_{t-3}
 
 forming a structured autoregressive representation.
